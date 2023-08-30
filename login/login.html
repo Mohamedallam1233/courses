@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login&signup</title>
+    <link href="https://fonts.googleapis.com/css?family=Lateef" rel="stylesheet">
+    <link href="../bootstrap-5.3.0-dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="login.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <div class="main d-flex justify-content-center">
+
+
+        <div class="col-lg-6 inputs_login">
+            <h2 class="header_text text-center w-100">تسجيل دخول</h2>
+            <div class="login_feilds justify-content-center d-flex">
+
+                <div class="login_headers">
+                    <div class="d-flex justify-content-between header_lo">
+                        <p class="p_kind" onclick="student()">طالب</p>
+                        <p class="p_kind" onclick="parents()">ولي أمر</p>
+                        <p class="p_kind" onclick="teacher()">مدرس</p>
+                    </div>
+
+                    <div class="student ">
+                        <div class="student_bar d-flex my-3">
+                            <div class="sec"></div>
+                            <div class="first"></div>
+                        </div>
+
+
+
+                        <div class="student_inputs">
+                            <div>
+                                <p class="label_style">الاسم بالكامل</p>
+                                <input type="text" class="input_style ">
+                                <p class="label_style">تاريخ الميلاد</p>
+                                <input type="text" class="input_style ">
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <p class="label_style">المرحلة الدراسية </p>
+                                        <input type="text" class="input_style_sides ">
+                                    </div>
+                                    <div>
+                                        <p class="label_style">الصف </p>
+                                        <input type="text" class="input_style_sides ">
+                                    </div>
+                                </div>
+                                <p class="label_style">المحافظة </p>
+                                <input type="text" class="input_style ">
+                                <p class="label_style"> رقم الموبيل</p>
+                                <input type="text" class="input_style ">
+                                <p class="label_style"> الرقم السري</p>
+                                <input type="text" class="input_style ">
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center  btn_login">
+                            <p class="p_signup">لديك حساب؟<span class="span_signup" onclick="registerion()">ادخل الان</span></p>
+                            <button class="tasgel" onclick="gologin()">تسجيل</button>
+                        </div>
+                    </div>
+
+
+                    <div class="teacher">
+                        <div class="teacher_bar d-flex my-3">
+                            <div class="sec"></div>
+                            <div class="first"></div>
+                        </div>
+                        <div class="student_inputs">
+
+                            <div>
+                                <p class="label_style">الاسم بالكامل</p>
+                                <input type="text" class="input_style ">
+                                <p class="label_style">رقم القومي</p>
+                                <input type="text" class="input_style ">
+                                <p class="label_style"> رقم الموبيل</p>
+                                <input type="text" class="input_style ">
+                                <p class="label_style"> الرقم السري</p>
+                                <input type="text" class="input_style ">
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center btn_login">
+                            <p class="p_signup">لديك حساب؟<span class="span_signup" onclick="registerion()">ادخل الان</span></p>
+                            <button class="tasgel" onclick="gologin()">تسجيل</button>
+                        </div>
+                    </div>
+
+                    <div class="parent">
+                        <div class="parent_bar d-flex my-3">
+                            <div class="first"></div>
+                            <div class="sec"></div>
+                            <div class="third"></div>
+                        </div>
+                        <div class="student_inputs">
+
+                            <div>
+                                <p class="label_style">الاسم بالكامل</p>
+                                <input type="text" class="input_style ">
+                                <p class="label_style"> البريد الالكتروني</p>
+                                <input type="text" class="input_style ">
+
+                                <p class="label_style">رقم القومي</p>
+                                <input type="text" class="input_style ">
+                                <p class="label_style"> رقم الموبيل</p>
+                                <input type="text" class="input_style ">
+                                <p class="label_style"> الرقم السري</p>
+                                <input type="text" class="input_style ">
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center  btn_login">
+                            <p class="p_signup">لديك حساب؟<span class="span_signup" onclick="registerion()">ادخل الان</span></p>
+                            <button class="tasgel" onclick="gologin()">تسجيل</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+                <div class="registerion">
+                    <div>
+                        <p class="label_style"> رقم الموبيل او الاسم بالكامل اوالبريد الالكتروني</p>
+                        <input type="text" class="input_style ">
+                        <p class="label_style"> الرقم السري</p>
+                        <input type="text" class="input_style ">
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p class="p_signup">لديك حساب؟<span class="span_signup" onclick="login()">انضم الينا</span></p>
+                        <button class="tasgel" onclick="gologin()">دخول</button>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+        <div class=" image_login col-lg-6 ">
+            <div class="all_text_image">
+                <div class="text-center ">
+                    <p class="image_h1">!اهلا بعودتك</p>
+                    <p class="image_h2">تسرنا رؤيتك من جديد</p>
+                    <div class="hr_login"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="jquery-3.6.3.min.js"></script>
+    <script src="login.js"></script>
+</body>
+
+</html>
